@@ -1,0 +1,288 @@
+/* TOP NAV BAR STYLING START */
+.navbar {
+    background: radial-gradient(at top left, #0000ff, #000);
+}
+
+.navbar a {
+    color:#fff;
+}
+
+a.nav-link {
+    border-radius: 1rem;
+    border-color: white;
+    border-width: 4px;
+}
+
+/* COLOR STYLE FOR THE NAVIGATION TOGGLE BUTTON IN SMALL SCREENS */
+.navbar-toggler {
+    border-color: #000;
+    background-color: #777;
+    color:#fff;
+}
+
+#searchButton {
+    background-color:green;
+    color: #fff
+}
+
+.navbar-brand {
+    font-weight:bold;
+    margin-left: 24px;
+}
+.navbar-brand, #searchButton, .btn {
+  font-family: 'Lato', sans-serif;
+}
+/* TOP NAV BAR STYLING END    */
+
+main {
+    margin: 10rem;
+} 
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#sourcesList ul, li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#sourcesList ul li {
+    margin-right: 1rem;
+}
+
+figure img {
+    border-radius: .5rem;
+}
+
+.card {
+    display: flex;
+    margin: .5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-color: none;
+    width: 18rem;
+}
+
+.listPoster {
+    width: 18rem;
+    height: 100%;
+    border-radius: 1rem;
+    border-style: solid;
+    margin: none;
+}
+
+#plot {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.btn {
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBtn {
+    border-style: solid;
+    background-color: none;
+    border-radius: 1rem;;
+}
+
+/* WATCHLIST BUTTONS STYLING START */
+.listButtons {
+    font-size: 2rem;
+    border-radius: .5rem;
+    border-style: solid;
+    margin: 2rem;
+    color: #fff;
+    background: radial-gradient(at top left, #0000ff, #000);
+    transition: background 0.3s ease;
+}
+
+.listButtons:hover {
+    background: radial-gradient(at top left, #000, #00f);
+}
+/* WATCHLIST BUTTONS STYLING END   */
+
+/* LIGHT MODE/DARK MODE STYLING START */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.light-mode {
+  --background-color: white;
+  --text-color: black;
+}
+
+.dark-mode {
+  --background-color: black;
+  --text-color: white;
+}
+
+
+/* LIGHT MODE/DARK MOED STYLING END   */
+
+
+
+  #recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .poster {
+    width: 100%;
+    height: auto;
+  }
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    margin-right: 5px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .spaced {
+    margin-bottom: 20px;
+  }
+  
+  .poster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .listPoster {
+    margin-bottom: 10px;
+  }
+  
+  .watchedButton {
+    width: 100%;
+    background-color: limegreen;
+  }
+  .removeButton {
+    width: 100%;
+    background-color: red;
+  }
+  .watchAgainBtn {
+    width: 100%;
+    background-color: blue;
+  }
+  
+  /* Adjust the position of the search bar */
+  .navbar-collapse {
+    position: relative;
+  }
+  
+  .form-control.me-2 {
+    margin-right: 40px; /* Increase or decrease as needed */
+  }
+    
+/* SCREEN STYLING FOR SMALL SCREEN */
+@media (max-width: 991px) {
+
+/* Vertical alignment between small and medium screen width to prevent overlap betweren poster and text */
+  #movieProfile {
+      width: 100%;
+  }
+
+  /* lightmode/darkmode button position */
+  .toggle-container {
+    position: absolute;
+    top: 14px;
+    right: 0px;
+  }
+}
